@@ -22,10 +22,9 @@
   --radius-6xl: 3rem;
 }
 
- .no-scroll::-webkit-scrollbar{display:none}
+   .no-scroll::-webkit-scrollbar{display:none}
   .no-scroll{scrollbar-width:none;-ms-overflow-style:none}
   .clamp-2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
   .hero-dot.active{width:22px!important;background:#fff!important}
   .mobile-dot.active{width:20px!important;background:#FF6E3F!important}
-  .group-tab-btn.active{background:#EB0000!important;color:#fff!important}
-
+  .group-tab-btn.active{background:#fff!important;color:#EB0000!important}

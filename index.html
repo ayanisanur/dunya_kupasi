@@ -54,8 +54,8 @@
 
 
 <template id="tpl-news-item">
-  <a href="#" class="flex items-center border-b border-[#F5F5F5] hover:bg-[#FAFAFA] transition-colors no-underline bg-white">
-    <img data-img alt="" class="w-[148px] h-[84px] object-cover shrink-0">
+  <a href="#" class="flex items-center border-b border-[#F5F5F5] ">
+    <img data-img alt="" class="w-[148px] h-[84px] object-cover shrink-0 transition-transform duration-300 group-hover:scale-105">
     <div class="px-4 flex-1">
       <h4 data-title class="text-[15px] font-bold text-[#000] leading-snug clamp-2"></h4>
     </div>
@@ -63,10 +63,10 @@
 </template>
 
 <template id="tpl-news-grid-card">
-  <a href="#" class="bg-white overflow-hidden block hover:-translate-y-1 transition-transform no-underline">
-    <img data-img alt="" class="w-full h-[150px] lg:h-[177px] object-cover block">
-    <div class="py-[12px] px-[16px]">
-      <h4 data-title class="text-[13px] lg:text-[18px] font-bold text-[#111] leading-snug clamp-2"></h4>
+  <a href="#" class="bg-white overflow-hidden block  no-underline ">
+    <img data-img alt="" class="w-full h-[150px] lg:h-[177px] object-cover block transition-transform duration-300 hover:scale-105">
+    <div class="py-[20px] px-[16px] ">
+      <h4 data-title class="text-[13px] lg:text-[18px] font-bold text-[#111] leading-snug clamp-2 "></h4>
     </div>
   </a>
 </template>
@@ -74,9 +74,9 @@
 
 <template id="tpl-more-news-card">
   <a href="#" class="bg-white overflow-hidden block hover:-translate-y-1 transition-transform no-underline">
-    <img data-img alt="" class="w-full h-[130px] lg:h-[176px] object-cover block">
+    <img data-img alt="" class="w-full h-[130px] lg:h-[176px] object-cover block transition-transform duration-300 group-hover:scale-105">
     <div class="p-3 lg:py-[12px] lg:px-[16px]">
-      <h4 data-title class="text-[13px] lg:text-[18px] font-bold text-[#111] leading-snug clamp-2"></h4>
+      <h4 data-title class="text-[15px] lg:text-[18px] font-bold text-[#111] leading-snug clamp-2"></h4>
     </div>
   </a>
 </template>
@@ -118,27 +118,62 @@
   </div>
 </template>
 
+<!-- tpl: video row — mobile list row -->
 <template id="tpl-video-row">
   <a href="#" class="flex items-center border-b border-[#F5F5F5] hover:bg-[#FAFAFA] transition-colors no-underline">
     <div class="relative shrink-0">
-      <img data-img alt="" class="w-[126px] md:w-[150px] h-[71px] md:h-[85px] object-cover block">
+      <img data-img alt="" class="w-[148px] h-[84px]  object-cover block">
       <div class="absolute bottom-1 left-[9px] w-6 h-6 bg-[#7F0006] rounded-full flex items-center justify-center">
         <svg width="8" height="9" viewBox="0 0 8 9" fill="none"><path d="M1 1L7 4.5L1 8V1Z" fill="white"/></svg>
       </div>
     </div>
     <div class="px-4 flex-1">
-      <h4 data-title class="text-[13px] font-bold text-[#111] leading-snug clamp-2"></h4>
+      <h4 data-title class="text-[15px] font-bold text-[#111] leading-snug clamp-2"></h4>
     </div>
   </a>
 </template>
 
-<template id="tpl-gallery-row">
-  <a href="#" class="flex items-center  hover:bg-[#FAFAFA] transition-colors no-underline">
-    <div class="relative shrink-0">
-      <img data-img alt="" class="w-[126px] md:w-[150px] h-[71px] md:h-[85px] object-cover block">
+<!-- tpl: video card — desktop big card -->
+<template id="tpl-video-card">
+  <a href="#" class="block relative overflow-hidden group no-underline bg-black">
+    <img data-img alt="" class="w-full h-[320px] object-cover block opacity-90 transition-transform duration-300 group-hover:scale-105">
+    <!-- CANLI badge -->
+    <div class="absolute top-3 left-3 bg-[#EB0000] text-white text-[11px] font-extrabold px-2 py-0.5 rounded-sm tracking-wide">CANLI</div>
+    <!-- play button center -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-[#7F0006] rounded-full flex items-center justify-center shadow-lg">
+      <svg width="18" height="20" viewBox="0 0 8 9" fill="none"><path d="M1 1L7 4.5L1 8V1Z" fill="white"/></svg>
     </div>
-    <div class="px-4 flex-1 flex flex-col gap-[10px]">
+    <!-- gradient + title -->
+    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 right-0 p-4">
+      <h4 data-title class="text-white text-[16px] font-bold leading-snug clamp-2"></h4>
+    </div>
+  </a>
+</template>
+
+<!-- tpl: gallery row — mobile list row -->
+<template id="tpl-gallery-row">
+  <a href="#" class="flex items-center hover:bg-[#FAFAFA] transition-colors no-underline">
+    <div class="relative shrink-0">
+      <img data-img alt="" class="w-[148px] h-[84px]object-cover block">
+    </div>
+    <div class="px-4 flex-1">
       <h4 data-title class="text-[15px] font-bold text-[#111] leading-snug clamp-2"></h4>
+    </div>
+  </a>
+</template>
+
+<!-- tpl: gallery card — desktop 2x2 grid card -->
+<template id="tpl-gallery-card">
+  <a href="#" class="bg-white overflow-hidden block hover:opacity-90 transition-opacity no-underline group relative">
+    <div class="relative overflow-hidden">
+      <img data-img alt="" class="w-full h-[140px] object-cover block transition-transform duration-300 group-hover:scale-105">
+      <div class="absolute top-2 left-2 w-6 h-6 bg-white/80 rounded flex items-center justify-center">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M20 5h-3.17L15 3H9L7.17 5H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm-8 13a5 5 0 1 1 0-10 5 5 0 0 1 0 10z" fill="#444"/></svg>
+      </div>
+    </div>
+    <div class="px-3 py-2">
+      <h4 data-title class="text-[13px] font-bold text-[#111] leading-snug clamp-2"></h4>
     </div>
   </a>
 </template>
@@ -153,7 +188,7 @@
 
 
 <!--desktop--> 
-<div class="hidden md:flex md:flex-col max-w-[980px] mx-auto py-5">
+<div class="hidden md:flex md:flex-col max-w-[1164px] mx-auto py-5 md:px-5 lg:px-0">
 
   <div class="mb-5 overflow-hidden bg-brand min-h-[250px] flex items-center justify-center">
     <img src="https://iaftm.tmgrup.com.tr/06b1de/970/90/0/0/970/90?u=https://iftm.tmgrup.com.tr/2025/01/06/samsung-galaxy-s26-ultra-1736168027697.jpeg"
@@ -162,20 +197,20 @@
   </div>
 
   <!-- 2-COL GRID -->
-  <div class="grid grid-cols-1 lg:grid-cols-[647px_314px]  gap-6 items-stretch">
-
+<div class="grid grid-cols-1 grid md:grid-cols-[2fr_373px] lg:grid-cols-[767px_373px] gap-6 items-stretch">
     <!-- LEFT -->
     <div>
 
       <!-- HERO -->
       <div class="relative  overflow-hidden bg-orange mb-5">
-        <div id="dHeroSlide" class="relative w-full h-[364px] overflow-hidden rounded-[60px_60px_0px_60px]">
+        <div id="dHeroSlide" class="relative w-full h-[373px] overflow-hidden rounded-[60px_60px_0px_60px]">
           <img id="dHeroImg" src="" alt="Slider" class="w-full h-full object-cover">
           <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/75 pointer-events-none"></div>
-          <button id="dHeroPrev" aria-label="Önceki" class="absolute left-0 top-1/2 -translate-y-1/2 w-11 h-11 bg-black/45 flex items-center justify-center z-10 hover:bg-black/70 transition-colors border-0">
+          <div id="dHeroPagination" class="absolute bottom-3 left-0 right-0 flex items-center justify-center gap-2 z-10 active:color-orange"></div>
+          <button id="dHeroPrev" aria-label="Önceki" class="absolute left-0 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center z-10 border-0">
             <svg width="10" height="16" viewBox="0 0 10 16" fill="none"><path d="M8 2L2 8L8 14" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>
           </button>
-          <button id="dHeroNext" aria-label="Sonraki" class="absolute right-0 top-1/2 -translate-y-1/2 w-11 h-11 bg-black/45 flex items-center justify-center z-10 hover:bg-black/70 transition-colors border-0">
+          <button id="dHeroNext" aria-label="Sonraki" class="absolute right-0 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center z-10 border-0">
             <svg width="10" height="16" viewBox="0 0 10 16" fill="none"><path d="M2 2L8 8L2 14" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>
           </button>
           
@@ -183,7 +218,7 @@
         <div class="bg-purple-dark rounded-bl-[65px] rounded-tl-[65px] rounded-br-[65px] px-[40px] py-[20px]">
           <h2 id="dHeroTitle" class="text-white text-[28px] font-bold leading-snug"></h2>
         </div>
-        <div id="dHeroPagination" class="flex items-center justify-center gap-2 py-3 bg-orange"></div>
+        
       </div>
 
 
@@ -226,10 +261,17 @@
 
     </div><!-- /sidebar -->
   </div><!-- /2-col grid -->
-      <!-- SCORE BAND -->
-      <div class="bg-white border-b-2 border-[#F0F0F0] overflow-x-auto no-scroll mb-5">
-        <div id="dScoreBand" class="flex items-center gap-6 px-6 py-2"></div>
-      </div>
+    <div class="bg-white border-b-2 border-[#F0F0F0] mb-5 flex items-center">
+    <button id="dScorePrev" class="shrink-0 w-8 h-full flex items-center justify-center bg-white hover:bg-[#f5f5f5] border-r border-[#eee] py-2">
+      <svg width="8" height="14" viewBox="0 0 8 14" fill="none"><path d="M6 2L2 7L6 12" stroke="#333" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <div class="overflow-x-auto no-scroll flex-1">
+      <div id="dScoreBand" class="flex items-center gap-6 px-4 py-2"></div>
+    </div>
+    <button id="dScoreNext" class="shrink-0 w-8 h-full flex items-center justify-center bg-white hover:bg-[#f5f5f5] border-l border-[#eee] py-2">
+      <svg width="8" height="14" viewBox="0 0 8 14" fill="none"><path d="M2 2L6 7L2 12" stroke="#333" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
 
       <div class="grid grid-cols-3 gap-[20px] mb-[20px]">
        <!-- KART -->
@@ -284,58 +326,92 @@
           </div>
           <div id="dGoalsList"></div>
         </div>
-        <div class="bg-brand h-[300px] rounded-md overflow-hidden flex items-center justify-center">
-      <img src="https://iaftm.tmgrup.com.tr/06b1de/300/300/0/0/300/300?u=https://iftm.tmgrup.com.tr/2025/01/06/samsung-galaxy-s26-ultra-1736168027697.jpeg"
-           alt="Reklam" class="w-full h-full object-cover"
-           onerror="this.parentElement.innerHTML='<span class=\'text-white/30 text-xs\'>300×300</span>'">
-    </div>
+        <!-- ASİST -->
+        <div class="bg-white overflow-hidden">
+          <div class="bg-red-dark relative h-[50px] overflow-hidden flex items-center">
+      <div class="absolute left-[46px] right-0 bottom-0 h-[50px] bg-purple rounded-tl-[70px]"></div>
+      <div class="absolute left-3 top-[9px] w-8 h-8 flex items-center justify-center">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <mask id="mask0_2675_4297" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+        <rect width="32" height="32" fill="#D9D9D9"/>
+        </mask>
+        <g mask="url(#mask0_2675_4297)">
+        <path d="M16 29.3333C14.1555 29.3333 12.4222 28.9833 10.8 28.2833C9.17777 27.5833 7.76666 26.6333 6.56666 25.4333C5.36666 24.2333 4.41666 22.8222 3.71666 21.2C3.01666 19.5777 2.66666 17.8444 2.66666 16C2.66666 14.1555 3.01666 12.4222 3.71666 10.8C4.41666 9.17774 5.36666 7.76663 6.56666 6.56663C7.76666 5.36663 9.17777 4.41663 10.8 3.71663C12.4222 3.01663 14.1555 2.66663 16 2.66663C17.8444 2.66663 19.5778 3.01663 21.2 3.71663C22.8222 4.41663 24.2333 5.36663 25.4333 6.56663C26.6333 7.76663 27.5833 9.17774 28.2833 10.8C28.9833 12.4222 29.3333 14.1555 29.3333 16C29.3333 17.8444 28.9833 19.5777 28.2833 21.2C27.5833 22.8222 26.6333 24.2333 25.4333 25.4333C24.2333 26.6333 22.8222 27.5833 21.2 28.2833C19.5778 28.9833 17.8444 29.3333 16 29.3333ZM22.6667 12.6666L24.4667 12.0666L25 10.2666C24.2889 9.19996 23.4333 8.28329 22.4333 7.51663C21.4333 6.74996 20.3333 6.17774 19.1333 5.79996L17.3333 7.06663V8.93329L22.6667 12.6666ZM9.33332 12.6666L14.6667 8.93329V7.06663L12.8667 5.79996C11.6667 6.17774 10.5667 6.74996 9.56666 7.51663C8.56666 8.28329 7.7111 9.19996 6.99999 10.2666L7.53332 12.0666L9.33332 12.6666ZM7.93332 22.9333L9.46666 22.8L10.4667 21L8.53332 15.2L6.66666 14.5333L5.33332 15.5333C5.33332 16.9777 5.53332 18.2944 5.93332 19.4833C6.33332 20.6722 6.99999 21.8222 7.93332 22.9333ZM17.7 26.5333C18.2555 26.4444 18.8 26.3111 19.3333 26.1333L20.2667 24.1333L19.4 22.6666H12.6L11.7333 24.1333L12.6667 26.1333C13.2 26.3111 13.7444 26.4444 14.3 26.5333C14.8555 26.6222 15.4222 26.6666 16 26.6666C16.5778 26.6666 17.1444 26.6222 17.7 26.5333ZM13 20H19L20.8667 14.6666L16 11.2666L11.2 14.6666L13 20ZM24.0667 22.9333C25 21.8222 25.6667 20.6722 26.0667 19.4833C26.4667 18.2944 26.6667 16.9777 26.6667 15.5333L25.3333 14.6L23.4667 15.2L21.5333 21L22.5333 22.8L24.0667 22.9333Z" fill="white"/>
+        </g>
+        </svg>
+
+
       </div>
+      <h3 class="absolute left-[70px]  text-white text-base font-bold">ASİST KRALLIĞI</h3>
+    </div>
+          <div class="flex items-center px-3 py-2 gap-1">
+            <span class="flex-1 text-[14px] font-bold text-[#333]">OYUNCU</span>
+            <span class="text-[14px] font-bold text-[#333]">TAKIM</span>
+            <div class="ml-3"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" fill="#111"/></svg></div>
+          </div>
+          <div id="dGoalsList"></div>
+        </div>
+      </div>
+      <div id="dNewsGrid" class="grid grid-cols-3 gap-4 mb-5"></div>
     </div><!-- /desktop -->
-    <div class="bg-[#FF6E3F] rounded-tl-[233px]">
- <!-- STADIUMS -->
-  <div class="bg-green rounded-tl-[233px] rounded-br-[233px] py-7 mb-0">
-    <div class="text-teal text-xl font-extrabold px-6 pb-[18px] tracking-wide max-w-[980px] mx-auto">STADYUMLAR</div>
-    <div id="dStadiumScroll" class="flex gap-[14px] overflow-x-auto no-scroll max-w-[980px] mx-auto"></div>
+<div class="hidden md:flex md:flex-col bg-[#FF6E3F] md:rounded-tl-[80px] lg:rounded-tl-[233px]">
+  <!-- STADIUMS -->
+  <div class="bg-green md:rounded-tl-[80px] md:rounded-br-[80px] lg:rounded-tl-[233px] lg:rounded-br-[233px] py-7 mb-0">
+    <div class="text-teal text-xl font-bold px-6 pb-[18px] tracking-wide max-w-[1164px] mx-auto">STADYUMLAR</div>
+    <div id="dStadiumScroll" class="flex gap-[14px] overflow-x-auto no-scroll max-w-[1164px] mx-auto "></div>
   </div>
-    <!-- CITIES -->
-  <div class="bg-teal rounded-tr-[233px] rounded-bl-[233px] px-6 py-[40px] mb-5">
-    <div class="text-green text-lg font-extrabold mb-[14px] max-w-[980px] mx-auto">ŞEHİRLER</div>
-    <div id="dCitiesGrid" class="flex overflow-x-auto no-scroll gap-[12px] max-w-[980px] mx-auto"></div>
+  <!-- CITIES -->
+  <div class="bg-teal md:rounded-tr-[80px] md:rounded-bl-[80px] lg:rounded-tr-[233px] lg:rounded-bl-[233px] py-[40px] mb-5">
+    <div class="text-green text-xl font-bold mb-[14px] max-w-[1164px] mx-auto">ŞEHİRLER</div>
+    <div id="dCitiesGrid" class="flex overflow-x-auto no-scroll gap-[12px] max-w-[1164px] mx-auto"></div>
   </div>
 </div>
-  <div class="hidden md:flex md:flex-col max-w-[980px] mx-auto py-5">
+  <div class="hidden md:flex md:flex-col max-w-[1164px] mx-auto py-5 md:px-5 lg:px-0">
        <!-- NEWS GRID -->
       
       <div id="dNewsGrid" class="grid grid-cols-3 gap-4 mb-5"></div>
-      <!-- BREAKING NEWS -->
-      <div class="mb-1"><span class="inline-block bg-red-dark text-white text-[13px] font-bold px-4 py-1 rounded-[20px_20px_20px_0]">SON DAKİKA</span></div>
-      <div id="dNewsList1" class="bg-white mb-5"></div>
-
      
- 
 
+<!-- VIDEO + GALLERY -->
+<div class="hidden md:block mb-8">
+  <div class="max-w-[1280px] mx-auto">
+    <div class="grid grid-cols-[1fr_1fr] gap-6">
 
+      <!-- LEFT: video slider -->
+      <div>
+        <div class="mb-2">
+          <span class="inline-block bg-red-dark text-white text-[13px] font-bold px-4 py-1 rounded-[20px_20px_20px_0]">VİDEO</span>
+        </div>
+        <div class="relative overflow-hidden bg-black">
+          <div id="dVideoSlides" class="relative w-full h-[320px]"></div>
+          <button id="dVideoPrev" class="absolute left-0 top-1/2 -translate-y-1/2 w-9 h-9 bg-black/40 flex items-center justify-center z-20 border-0">
+            <svg width="10" height="14" viewBox="0 0 8 12" fill="none"><path d="M7 1L1 6L7 11" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+          <button id="dVideoNext" class="absolute right-0 top-1/2 -translate-y-1/2 w-9 h-9 bg-black/40 flex items-center justify-center z-20 border-0">
+            <svg width="10" height="14" viewBox="0 0 8 12" fill="none"><path d="M1 1L7 6L1 11" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+        <div id="dVideoPagination" class="flex justify-center gap-2 py-3 bg-white"></div>
+      </div>
 
-  <!-- VIDEO + GALLERY -->
-  <div class="grid grid-cols-1 lg:grid-cols-[1fr_310px] gap-6 mb-6">
-    <div>
-      <div class="mb-1"><span class="inline-block bg-red-dark text-white text-[13px] font-bold px-4 py-1 rounded-[20px_20px_20px_0]">VİDEO</span></div>
-      <div id="dVideoList" class="bg-white mb-4"></div>
-      <div class="mb-1"><span class="inline-block bg-red-dark text-white text-[13px] font-bold px-4 py-1 rounded-[20px_20px_20px_0]">GALERİ</span></div>
-      <div id="dGalleryList" class="bg-white"></div>
-    </div>
-    <div class="bg-brand h-[300px] rounded-md overflow-hidden flex items-center justify-center">
-      <img src="https://iaftm.tmgrup.com.tr/06b1de/300/300/0/0/300/300?u=https://iftm.tmgrup.com.tr/2025/01/06/samsung-galaxy-s26-ultra-1736168027697.jpeg"
-           alt="Reklam" class="w-full h-full object-cover"
-           onerror="this.parentElement.innerHTML='<span class=\'text-white/30 text-xs\'>300×300</span>'">
+      <!-- RIGHT: gallery — büyük sol + 2 küçük sağ -->
+      <div>
+        <div class="mb-2">
+          <span class="inline-block bg-red-dark text-white text-[13px] font-bold px-4 py-1 rounded-[20px_20px_20px_0]">GALERİ</span>
+        </div>
+        <!-- 1 büyük + 2 küçük yan yana -->
+        <div id="dGalleryList" class="grid grid-cols-[1fr_1fr] grid-rows-2 gap-3 h-[320px]">          <!-- JS: ilk item büyük kart (h-full), sonraki 2 item sağda alt alta -->
+        </div>
+      </div>
+
     </div>
   </div>
-
-  <!-- MORE NEWS -->
-  <div class="flex items-center mb-3">
-  </div>
-  <div id="dMoreNews" class="grid grid-cols-3 gap-4 mb-5"></div>
 </div>
+
+ <div class="grid grid-cols-3 gap-4 mb-5">
+    <div id="dMoreNews" class="col-span-2 grid grid-cols-2 gap-4 content-start"></div>
+    <div id="dNewsList1" class="bg-white flex flex-col"></div>
+  </div>
 
 
 
@@ -401,7 +477,7 @@
       <h3 class="text-white text-lg font-extrabold px-[18px] flex-1 uppercase">GRUPLAR</h3>
       <div class="bg-lime w-[42px] h-[42px] shrink-0"></div>
     </div>
-    <div id="mGroupTabs" class="bg-[#7F0006] rounded-bl-[60px] py-2 flex justify-center items-center overflow-x-auto no-scroll px-[14px]"></div>
+    <div id="mGroupTabs" class="bg-[#7F0006] rounded-bl-[60px] py-2 flex justify-center items-center overflow-x-auto no-scroll px-[14px] pl-[5rem]"></div>
     <div id="mGroupTable" class="bg-[#F5F5F5] rounded-xl m-2 p-3">
       <div class="grid grid-cols-[1fr_repeat(5,28px)] text-[11px] font-bold  px-1 pb-1">
         <span class="font-bold">TAKIMLAR</span><span class="text-center">O</span><span class="text-center">A</span>
@@ -501,14 +577,40 @@
     </div>
   </section>
 
-  <!-- VIDEO + GALLERY -->
-  <section class="mt-4 bg-white pb-4">
-    <div class="px-4 pt-2 pb-1"><span class="inline-block bg-red-dark text-white text-[13px] font-bold px-4 py-1 rounded-[20px_20px_20px_0]">VİDEO</span></div>
-    <div id="mVideoList" class="px-4"></div>
-    <div class="px-4 pt-2 pb-[10px] mt-2"><span class="inline-block bg-red-dark text-white text-[18px] font-bold px-4 py-1 rounded-[20px_20px_20px_0]">GALERİ</span></div>
-    <div id="mGalleryList" class="px-4 flex flex-col gap-[10px]"></div>
-  </section>
+  <!-- VIDEO SLIDER -->
+  <section class="pt-4 px-[14px] bg-white">
+    <!-- label -->
+    <div class="px-0 ">
+      <span class="inline-block bg-red-dark text-white text-[13px] font-bold px-4 py-1 rounded-[20px_20px_20px_0]">VİDEO</span>
+    </div>
+    <!-- big card -->
+    <div id="mVideoSlider" class="relative overflow-hidden bg-black">
+      <!-- slides injected by JS -->
+      <div id="mVideoSlides" class="relative w-full h-[220px]"></div>
+      <!-- prev/next -->
+      <button id="mVideoPrev" class="absolute left-0 top-1/2 -translate-y-1/2 w-9 h-9 bg-black/40 flex items-center justify-center z-20 border-0">
+        <svg width="10" height="14" viewBox="0 0 8 12" fill="none"><path d="M7 1L1 6L7 11" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button id="mVideoNext" class="absolute right-0 top-1/2 -translate-y-1/2 w-9 h-9 bg-black/40 flex items-center justify-center z-20 border-0">
+        <svg width="10" height="14" viewBox="0 0 8 12" fill="none"><path d="M1 1L7 6L1 11" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <!-- dots pagination -->
+    <div id="mVideoPagination" class="flex justify-center gap-2 py-3 bg-white"></div>
 
+    <!-- GALLERY below -->
+    <div class="bg-white pt-1 pb-2">
+      <div class="pb-2"><span class="inline-block bg-red-dark text-white text-[13px] font-bold px-4 py-1 rounded-[20px_20px_20px_0]">GALERİ</span></div>
+      <div id="mGalleryList" class="flex flex-col gap-[10px]"></div>
+    </div>
+  </section>
+  <section class="mt-4 mx-[14px]">
+    <div class="bg-brand h-[250px] rounded-md overflow-hidden flex items-center justify-center">
+          <img src="https://iaftm.tmgrup.com.tr/06b1de/300/250/0/0/300/250?u=https://iftm.tmgrup.com.tr/2025/01/06/samsung-galaxy-s26-ultra-1736168027697.jpeg"
+              alt="Reklam" class="w-full h-full object-cover"
+              onerror="this.parentElement.innerHTML='<span class=\'text-white/30 text-xs\'>Reklam Alanı</span>'">
+    </div>
+  </section>
   <!-- NEWS 2 -->
 <section class="mt-4 mx-[14px]">
     
@@ -520,3 +622,9 @@
 <script src="index.js"></script>
 </body>
 </html>
+
+
+
+
+
+

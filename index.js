@@ -1,8 +1,7 @@
-
 const heroSlides = [
-  { img:'https://picsum.photos/seed/wc1/900/400', title:'Dünya Kupası 2026 Heyecanı Başlıyor – 48 Takım, 3 Ülke, Eşsiz Anlar' },
-  { img:'https://picsum.photos/seed/wc2/900/400', title:'Türkiye Milli Takımı Gruptan Nasıl Çıkar? İşte Analiz' },
-  { img:'https://picsum.photos/seed/wc3/900/400', title:'En Favori Takımlar ve Şampiyonluk Oranları 2026' },
+  { img:'https://iaftm.tmgrup.com.tr/e2c8f9/943/533/0/64/720/471?u=https://iftm.tmgrup.com.tr/2022/12/23/dunya-kupasinin-en-guzel-golu-richarlisondan-1671802243858.jpeg', title:'Dünya Kupası 2026 Heyecanı Başlıyor – 48 Takım, 3 Ülke, Eşsiz Anlar' },
+  { img:'https://iaftm.tmgrup.com.tr/15d8a7/943/533/0/0/2048/1158?u=https://iftm.tmgrup.com.tr/2022/12/21/mbappenin-arjantin-fransa-dunya-kupasi-finalindeki-sozleri-ortaya-cikti-soyunma-odasinda-1671616130087.jpg', title:'Türkiye Milli Takımı Gruptan Nasıl Çıkar? İşte Analiz' },
+  { img:'https://iaftm.tmgrup.com.tr/90ebe5/943/533/0/81/940/612?u=https://iftm.tmgrup.com.tr/2022/12/21/fas-milli-takimina-kraliyet-nisani-1671604723617.jpeg', title:'En Favori Takımlar ve Şampiyonluk Oranları 2026' },
 ];
 
 const scoreItems = [
@@ -24,8 +23,7 @@ const scoreItems = [
 ];
 
 const matches = [
-  { home:'Brezilya', homeFlag:'https://flagcdn.com/w40/br.png', away:'Almanya',  awayFlag:'https://flagcdn.com/w40/de.png' },
-
+  { home:'Brezilya', homeFlag:'https://flagcdn.com/w40/br.png', away:'Almanya', awayFlag:'https://flagcdn.com/w40/de.png' },
 ];
 
 const groups = ['A','B','C','D','E','F','G','H','I','J','K','L'];
@@ -39,12 +37,12 @@ const groupData = {
 };
 
 const newsList = [
-  { img:'https://picsum.photos/seed/n1/300/170', title:'Ronaldo Dünya Kupası\'nda Oynayacak mı? İşte Son Açıklama' },
-  { img:'https://picsum.photos/seed/n2/300/170', title:'Messi\'nin 2026 Hedefleri: Son Kupayı Kazanmak İstiyorum' },
-  { img:'https://picsum.photos/seed/n3/300/170', title:'Türkiye Gruptan Çıkabilir mi? Uzmanlar Ne Diyor?' },
-  { img:'https://picsum.photos/seed/n4/300/170', title:'2026 Dünya Kupası Bilet Fiyatları Belli Oldu' },
-  { img:'https://picsum.photos/seed/n5/300/170', title:'En Pahalı Kadro: Hangi Takım Ne Kadar Harcadı?' },
-  { img:'https://picsum.photos/seed/n6/300/170', title:'VAR Tartışmaları Bitmek Bilmiyor – Yeni Kural Geliyor' },
+  { img:'https://iaftm.tmgrup.com.tr/90ebe5/943/533/0/81/940/612?u=https://iftm.tmgrup.com.tr/2022/12/21/fas-milli-takimina-kraliyet-nisani-1671604723617.jpeg', title:'Ronaldo Dünya Kupası\'nda Oynayacak mı? İşte Son Açıklama' },
+  { img:'https://iaftm.tmgrup.com.tr/15d8a7/943/533/0/0/2048/1158?u=https://iftm.tmgrup.com.tr/2022/12/21/mbappenin-arjantin-fransa-dunya-kupasi-finalindeki-sozleri-ortaya-cikti-soyunma-odasinda-1671616130087.jpg', title:'Messi\'nin 2026 Hedefleri: Son Kupayı Kazanmak İstiyorum' },
+  { img:'https://iaftm.tmgrup.com.tr/06b1de/970/90/0/0/970/90?u=https://iftm.tmgrup.com.tr/2025/01/06/samsung-galaxy-s26-ultra-1736168027697.jpeg', title:'Türkiye Gruptan Çıkabilir mi? Uzmanlar Ne Diyor?' },
+  { img:'https://iaftm.tmgrup.com.tr/e2c8f9/943/533/0/64/720/471?u=https://iftm.tmgrup.com.tr/2022/12/23/dunya-kupasinin-en-guzel-golu-richarlisondan-1671802243858.jpeg', title:'2026 Dünya Kupası Bilet Fiyatları Belli Oldu' },
+  { img:'https://iaftm.tmgrup.com.tr/90ebe5/943/533/0/81/940/612?u=https://iftm.tmgrup.com.tr/2022/12/21/fas-milli-takimina-kraliyet-nisani-1671604723617.jpeg', title:'En Pahalı Kadro: Hangi Takım Ne Kadar Harcadı?' },
+  { img:'https://iaftm.tmgrup.com.tr/15d8a7/943/533/0//u=https://iftm.tmgrup.com.tr/2022//mbappenin-arjantin-fransa-dunya-kupasi-finalindeki-sozleri-ortaya-cikti-soyunma-odasinda-1671616130087.jpg', title:'VAR Tartışmaları Bitmek Bilmiyor – Yeni Kural Geliyor' },
 ];
 
 const cards = [
@@ -62,11 +60,11 @@ const goals = [
 ];
 
 const stadiums = [
-  { img:'https://picsum.photos/seed/st1/280/320', name:'MetLife Stadium', city:'New York' },
-  { img:'https://picsum.photos/seed/st2/280/320', name:'SoFi Stadium',    city:'Los Angeles' },
-  { img:'https://picsum.photos/seed/st3/280/320', name:'AT&T Stadium',    city:'Dallas' },
-  { img:'https://picsum.photos/seed/st4/280/320', name:'Azteca',          city:'Mexico City' },
-  { img:'https://picsum.photos/seed/st5/280/320', name:'BC Place',        city:'Vancouver' },
+  { img:'https://iaftm.tmgrup.com.tr/8867df/301/349/353/0/975/720?u=https://iftm.tmgrup.com.tr/2022/09/17/al-janoub-stadyumu-1663408669576.jpg', name:'MetLife Stadium', city:'New York' },
+  { img:'https://iaftm.tmgrup.com.tr/8867df/301/349/353/0/975/720?u=https://iftm.tmgrup.com.tr/2022/09/17/al-janoub-stadyumu-1663408669576.jpg', name:'SoFi Stadium',    city:'Los Angeles' },
+  { img:'https://iaftm.tmgrup.com.tr/8867df/301/349/353/0/975/720?u=https://iftm.tmgrup.com.tr/2022/09/17/al-janoub-stadyumu-1663408669576.jpg', name:'AT&T Stadium',    city:'Dallas' },
+  { img:'https://iaftm.tmgrup.com.tr/8867df/301/349/353/0/975/720?u=https://iftm.tmgrup.com.tr/2022/09/17/al-janoub-stadyumu-1663408669576.jpg', name:'Azteca',          city:'Mexico City' },
+  { img:'https://iaftm.tmgrup.com.tr/8867df/301/349/353/0/975/720?u=https://iftm.tmgrup.com.tr/2022/09/17/al-janoub-stadyumu-1663408669576.jpg', name:'BC Place',        city:'Vancouver' },
 ];
 
 const cities = [
@@ -80,15 +78,21 @@ const cities = [
   { name:'Dallas',        country:'ABD',     color:'#7c3aed' },
   { name:'Miami',         country:'ABD',     color:'#0891b2' },
   { name:'San Francisco', country:'ABD',     color:'#c2410c' },
-]; 
+];
+
 const videos = [
-  { img:'https://picsum.photos/seed/v1/300/170', title:'Dünya Kupası 2026 Açılış Töreni Tanıtım Videosu' },
-  { img:'https://picsum.photos/seed/v2/300/170', title:'En Güzel Gollar – Elemelerin Özeti' },
+  { img:'https://iaftm.tmgrup.com.tr/0f7132/408/231/0/0/2048/1160?u=https://iftm.tmgrup.com.tr/2022/12/19/fifadan-arjantine-dev-gelir-1671430335967.jpg', title:'Dünya Kupası 2026 Açılış Töreni Tanıtım Videosu' },
+  { img:'https://iaftm.tmgrup.com.tr/0f7132/408/231/0/0/2048/1160?u=https://iftm.tmgrup.com.tr/2022/12/19/fifadan-arjantine-dev-gelir-1671430335967.jpg', title:'En Güzel Gollar – Elemelerin Özeti' },
+];
+
+const galleries = [
+  { img:'https://iaftm.tmgrup.com.tr/e2c8f9/943/533/0/64/720/471?u=https://iftm.tmgrup.com.tr/2022/12/23/dunya-kupasinin-en-guzel-golu-richarlisondan-1671802243858.jpeg', title:'Fenerbahçe 1-0 Beşiktaş | MAÇTAN KARELER' },
+  { img:'https://iaftm.tmgrup.com.tr/90ebe5/943/533/0/81/940/612?u=https://iftm.tmgrup.com.tr/2022/12/21/fas-milli-takimina-kraliyet-nisani-1671604723617.jpeg', title:'Süper Lig\'de heyecan devam ediyor! İşte güncel puan durumu' },
+  { img:'https://iaftm.tmgrup.com.tr/15d8a7/943/533/0/0/2048/1158?u=https://iftm.tmgrup.com.tr/2022/12/21/mbappenin-arjantin-fransa-dunya-kupasi-finalindeki-sozleri-ortaya-cikti-soyunma-odasinda-1671616130087.jpg', title:'Trabzonspor 2-1 Galatasaray | MAÇTAN KARELER' },
 ];
 
 
 const cloneTemplate = (id) => document.getElementById(id).content.cloneNode(true).firstElementChild;
-
 
 const fillScoreItem = (data) => {
   const el = cloneTemplate('tpl-score-item');
@@ -176,9 +180,10 @@ const fillCityBtn = (data) => {
   el.querySelector('[data-country]').textContent = data.country;
   return el;
 };
+
 const fillVideoRow = (data) => {
   const el = cloneTemplate('tpl-video-row');
-  el.querySelector('[data-img]').src          = data.img;
+  el.querySelector('[data-img]').src           = data.img;
   el.querySelector('[data-title]').textContent = data.title;
   return el;
 };
@@ -249,9 +254,6 @@ const renderStadiums = (id) =>
 const renderCities = (id) =>
   appendTo(id, cities.map(fillCityBtn));
 
-const renderVideos = (id) =>
-  appendTo(id, videos.map(fillVideoRow));
-
 const renderGallery = (id) =>
   appendTo(id, videos.map(fillGalleryRow));
 
@@ -288,6 +290,178 @@ const initHero = (imgId, titleId, paginId, prevId, nextId, dotTplId) => {
   setInterval(() => { idx = (idx + 1) % heroSlides.length; updateSlider(); }, 5000);
 };
 
+const initDesktopVideoSlider = () => {
+  const slidesEl = document.getElementById('dVideoSlides');
+  const paginEl  = document.getElementById('dVideoPagination');
+  if (!slidesEl) return;
+
+  let idx = 0;
+
+  const slideEls = videos.map((v) => {
+    const slide = document.createElement('div');
+    slide.className = 'absolute inset-0 transition-opacity duration-300';
+
+    const img = document.createElement('img');
+    img.src = v.img;
+    img.alt = v.title;
+    img.className = 'w-full h-full object-cover block';
+    slide.appendChild(img);
+
+    const grad = document.createElement('div');
+    grad.className = 'absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent pointer-events-none';
+    slide.appendChild(grad);
+
+    const canli = document.createElement('div');
+    canli.className = 'absolute top-3 left-3 bg-[#EB0000] text-white text-[11px] font-extrabold px-2 py-[2px] rounded-sm tracking-wide';
+    canli.textContent = 'CANLI';
+    slide.appendChild(canli);
+
+    const play = document.createElement('div');
+    play.className = 'absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-[#7F0006] rounded-full flex items-center justify-center shadow-lg';
+    play.innerHTML = '<svg width="18" height="20" viewBox="0 0 8 9" fill="none"><path d="M1 1L7 4.5L1 8V1Z" fill="white"/></svg>';
+    slide.appendChild(play);
+
+    const titleEl = document.createElement('div');
+    titleEl.className = 'absolute bottom-0 left-0 right-0 px-4 py-3';
+    titleEl.innerHTML = `<h4 class="text-white text-[16px] font-bold leading-snug clamp-2">${v.title}</h4>`;
+    slide.appendChild(titleEl);
+
+    slidesEl.appendChild(slide);
+    return slide;
+  });
+
+  const update = () => {
+    slideEls.forEach((s, i) => {
+      s.style.opacity = i === idx ? '1' : '0';
+      s.style.zIndex  = i === idx ? '1' : '0';
+    });
+    paginEl.replaceChildren();
+    slideEls.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.className = `w-[10px] h-[10px] rounded-full border-0 cursor-pointer transition-all ${i === idx ? 'bg-[#EB0000]' : 'bg-[#ccc]'}`;
+      dot.addEventListener('click', () => { idx = i; update(); });
+      paginEl.appendChild(dot);
+    });
+  };
+
+  document.getElementById('dVideoPrev')?.addEventListener('click', () => {
+    idx = (idx - 1 + videos.length) % videos.length;
+    update();
+  });
+  document.getElementById('dVideoNext')?.addEventListener('click', () => {
+    idx = (idx + 1) % videos.length;
+    update();
+  });
+
+  update();
+  setInterval(() => { idx = (idx + 1) % videos.length; update(); }, 4000);
+};
+
+const renderDesktopGallery = (id) => {
+  const el = document.getElementById(id);
+  if (!el) return;
+
+  el.className = 'grid grid-cols-2 grid-rows-2 gap-3 h-[354px]';
+
+  galleries.forEach((item, i) => {
+    const a = document.createElement('a');
+    a.href = '#';
+    a.className = 'relative overflow-hidden group block bg-black';
+    if (i === 0) a.classList.add('row-span-2');
+
+    const img = document.createElement('img');
+    img.src = item.img;
+    img.alt = item.title;
+    img.className = 'w-full h-full object-cover block opacity-90 transition-transform duration-300 group-hover:scale-105';
+    a.appendChild(img);
+
+    const icon = document.createElement('div');
+    icon.className = 'absolute top-2 left-2 w-6 h-6 bg-black/60 rounded flex items-center justify-center';
+    icon.innerHTML = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M20 5h-3.17L15 3H9L7.17 5H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm-8 13a5 5 0 1 1 0-10 5 5 0 0 1 0 10z" fill="white"/></svg>';
+    a.appendChild(icon);
+
+    const grad = document.createElement('div');
+    grad.className = 'absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none';
+    a.appendChild(grad);
+
+    const titleEl = document.createElement('div');
+    titleEl.className = 'absolute bottom-0 left-0 right-0 px-3 py-2';
+    titleEl.innerHTML = `<h4 class="text-white text-[${i === 0 ? '15' : '13'}px] font-bold leading-snug clamp-2">${item.title}</h4>`;
+    a.appendChild(titleEl);
+
+    el.appendChild(a);
+  });
+};
+
+const initMobileVideoSlider = () => {
+  const slidesEl = document.getElementById('mVideoSlides');
+  const paginEl  = document.getElementById('mVideoPagination');
+  if (!slidesEl) return;
+
+  let idx = 0;
+
+  const slideEls = videos.map((v) => {
+    const slide = document.createElement('div');
+    slide.className = 'absolute inset-0 transition-opacity duration-300';
+
+    const img = document.createElement('img');
+    img.src = v.img;
+    img.alt = v.title;
+    img.className = 'w-full h-full object-cover block';
+    slide.appendChild(img);
+
+    const grad = document.createElement('div');
+    grad.className = 'absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent pointer-events-none';
+    slide.appendChild(grad);
+
+    const canli = document.createElement('div');
+    canli.className = 'absolute top-3 right-3 bg-[#EB0000] text-white text-[11px] font-extrabold px-2 py-[2px] rounded-sm tracking-wide';
+    canli.textContent = 'CANLI';
+    slide.appendChild(canli);
+
+    const play = document.createElement('div');
+    play.className = 'absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-[#7F0006] rounded-full flex items-center justify-center shadow-lg';
+    play.innerHTML = '<svg width="16" height="18" viewBox="0 0 8 9" fill="none"><path d="M1 1L7 4.5L1 8V1Z" fill="white"/></svg>';
+    slide.appendChild(play);
+
+    const titleEl = document.createElement('div');
+    titleEl.className = 'absolute bottom-0 left-0 right-0 px-4 py-3';
+    titleEl.innerHTML = `<h4 class="text-white text-[15px] font-bold leading-snug clamp-2">${v.title}</h4>`;
+    slide.appendChild(titleEl);
+
+    slidesEl.appendChild(slide);
+    return slide;
+  });
+
+  const updateVideoSlider = () => {
+    slideEls.forEach((s, i) => {
+      s.style.opacity  = i === idx ? '1' : '0';
+      s.style.zIndex   = i === idx ? '1' : '0';
+    });
+
+    paginEl.replaceChildren();
+    slideEls.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.className = `mobile-dot w-[10px] h-[10px] rounded-[10px] border-0 cursor-pointer transition-all ${i === idx ? 'active bg-[#EB0000]' : 'bg-[#ccc]'}`;
+      dot.addEventListener('click', () => { idx = i; updateVideoSlider(); });
+      paginEl.appendChild(dot);
+    });
+  };
+
+  document.getElementById('mVideoPrev')?.addEventListener('click', () => {
+    idx = (idx - 1 + videos.length) % videos.length;
+    updateVideoSlider();
+  });
+  document.getElementById('mVideoNext')?.addEventListener('click', () => {
+    idx = (idx + 1) % videos.length;
+    updateVideoSlider();
+  });
+
+  updateVideoSlider();
+  setInterval(() => { idx = (idx + 1) % videos.length; updateVideoSlider(); }, 4000);
+};
+
+
 document.addEventListener('DOMContentLoaded', () => {
   renderScoreBand('dScoreBand');
   renderScoreBand('mScoreBand');
@@ -314,10 +488,11 @@ document.addEventListener('DOMContentLoaded', () => {
   renderCities('dCitiesGrid');
   renderCities('mCityScroll');
 
-  renderVideos('dVideoList');
-  renderVideos('mVideoList');
-  renderGallery('dGalleryList');
   renderGallery('mGalleryList');
+
+  initDesktopVideoSlider();
+  renderDesktopGallery('dGalleryList');
+  initMobileVideoSlider();
 
   initHero('dHeroImg','dHeroTitle','dHeroPagination','dHeroPrev','dHeroNext','tpl-hero-dot');
   initHero('mHeroImg','mHeroTitle','mHeroPagination','mHeroPrev','mHeroNext','tpl-mobile-dot');
