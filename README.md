@@ -10,6 +10,9 @@ Bu proje, Dünya Kupası 2026 için hazırlanan statik bir haber ve maç takvimi
 - Mobil ve masaüstü uyumlu responsive tasarım
 - Dinamik veri kartları ve slayt yapısı
 
+<img width="1920" height="4701" alt="image" src="https://github.com/user-attachments/assets/b47a88cd-0239-40dd-969a-553888219ba7" />
+
+
 ## Teknolojiler
 
 - HTML5
